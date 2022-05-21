@@ -1,4 +1,4 @@
-from pyobigram.utils import sizeof_fmt,get_file_size,createID,nice_time
+﻿from pyobigram.utils import sizeof_fmt,get_file_size,createID,nice_time
 from pyobigram.client import ObigramClient,inlineQueryResultArticle
 from MoodleClient import MoodleClient
 
@@ -556,9 +556,9 @@ def onmessage(update,bot:ObigramClient):
             ddl(update,bot,message,url,file_name='',thread=thread,jdb=jdb)
         else:
             #if update:
-                api_id = os.environ.get('api_id')
-                api_hash = os.environ.get('api_hash')
-                bot_token = os.environ.get('bot_token')
+            #    api_id = os.environ.get('api_id')
+            #    api_hash = os.environ.get('api_hash')
+            #    bot_token = os.environ.get('bot_token')
             #    
                 # set in debug
             #    api_id = 7386053
