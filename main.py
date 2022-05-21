@@ -1,4 +1,4 @@
-﻿from pyobigram.utils import sizeof_fmt,get_file_size,createID,nice_time
+from pyobigram.utils import sizeof_fmt,get_file_size,createID,nice_time
 from pyobigram.client import ObigramClient,inlineQueryResultArticle
 from MoodleClient import MoodleClient
 
@@ -241,7 +241,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'RayCruzMDeportivo'
+        #tl_admin_user = 'RayCruzMDeportivo'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -556,9 +556,9 @@ def onmessage(update,bot:ObigramClient):
             ddl(update,bot,message,url,file_name='',thread=thread,jdb=jdb)
         else:
             #if update:
-            #    api_id = os.environ.get('api_id')
-            #    api_hash = os.environ.get('api_hash')
-            #    bot_token = os.environ.get('bot_token')
+                api_id = os.environ.get('api_id')
+                api_hash = os.environ.get('api_hash')
+                bot_token = os.environ.get('bot_token')
             #    
                 # set in debug
             #    api_id = 7386053
@@ -579,7 +579,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5369698097:AAE5EjpB5bxrmvnTDAMBG5RugUYxw1_HB0I'
+    #bot_token = '5369698097:AAE5EjpB5bxrmvnTDAMBG5RugUYxw1_HB0I'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
